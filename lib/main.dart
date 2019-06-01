@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttering/routes/app_routes.dart';
-import 'package:fluttering/screens/login_screen.dart';
+import 'package:fluttering/screens/main_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,11 +9,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     print(routes);
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Fluttering',
+      routes: routes,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      home: MainScreen(),
     );
   }
 }
