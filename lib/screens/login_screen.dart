@@ -71,51 +71,39 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _makeLoginButtton() {
-    return RaisedButton(
-      onPressed: () {
-                if (_currentEmail.text != '' && _currentEmail.text != '') {
-                  FirebaseAuth.instance
-                      .signInWithEmailAndPassword(
-                          email: _currentEmail.text,
-                          password: _currentPassword.text)
-                      .then((user) {
-                    Session().user = user;
-                    Navigator.pushNamed(context, 'home-screen');
-                  }).catchError(() => _handleSignInError());
-                } else {
-                  setState(() {
-                    _inputState = 'email and password needed';
-                  });
-                }
-              },
-      child: const Text(
-        'login',
-        style: TextStyle(
-          fontSize: 17.0,
-          color: Colors.white,
-          fontWeight: FontWeight.normal,
+    return ButtonTheme(
+      minWidth: 180.0,
+      child: RaisedButton(
+        onPressed: () {
+          if (_currentEmail.text != '' && _currentEmail.text != '') {
+            FirebaseAuth.instance
+                .signInWithEmailAndPassword(
+                    email: _currentEmail.text, password: _currentPassword.text)
+                .then((user) {
+              Session().user = user;
+              Navigator.pushNamed(context, 'home-screen');
+            }).catchError(() => _handleSignInError());
+          } else {
+            setState(() {
+              _inputState = 'email and password needed';
+            });
+          }
+        },
+        child: const Text(
+          'LOGIN',
+          style: TextStyle(
+            fontSize: 16.0,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
+        color: Colors.lightBlueAccent[400],
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       ),
-      color: Colors.lightBlueAccent[400],
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
     );
   }
 
-  Widget _makeSignUpButton() {
-    return RaisedButton(
-      onPressed: () => Navigator.pushNamed(context, 'register-screen'),
-      child: const Text(
-        'sign up',
-        style: TextStyle(
-          fontSize: 17.0,
-          color: Colors.white,
-          fontWeight: FontWeight.normal,
-        ),
-      ),
-      color: Colors.blue[900],
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-    );
-  }
 
   Widget _buildBody() {
     return Column(
@@ -128,7 +116,6 @@ class _LoginScreenState extends State<LoginScreen> {
         _makePasswordBox(),
         _makeErrorBox(),
         _makeLoginButtton(),
-        _makeSignUpButton()
       ],
     );
   }
