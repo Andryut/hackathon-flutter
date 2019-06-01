@@ -5,7 +5,9 @@ var topBar = AppBar(
   actions: <Widget>[
     IconButton(
       icon: Icon(Icons.account_circle),
-      onPressed: (){},
+      onPressed: (){
+
+      },
     ),
   ],
   backgroundColor: Colors.blueAccent,

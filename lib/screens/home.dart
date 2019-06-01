@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttering/widgets/frames/lastest_posts/lastest_posts.dart';
+import 'package:fluttering/widgets/frames/settings/settings.dart';
 
 class Home extends StatefulWidget{
 
@@ -16,7 +17,7 @@ class _Home extends State<Home> {
   final _widgetOptions = [
     Text('Index 0'),
     LastestPosts(),
-    Text('Index 2'),
+    Settings(),
   ];
 
   @override

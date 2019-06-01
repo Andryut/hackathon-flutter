@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Constants.dart';
+import 'constants.dart';
 import 'post_card.dart';
 
 class BodyLastestPosts extends StatelessWidget{
