@@ -27,6 +27,19 @@ class _CreatePost extends State<CreatePost> {
                     decoration: InputDecoration(
                         labelText: 'Enter the title of the post'
                     )
+                ),
+                TextFormField(
+                    decoration: InputDecoration(
+                        labelText: 'Enter the description of the post'
+                    )
+                ),
+                TextFormField(
+                    decoration: InputDecoration(
+                        labelText: 'Enter the content of the post'
+                    )
+                ),
+                FlatButton(
+                  child: Text('Submit'),
                 )
               ],
             )),
