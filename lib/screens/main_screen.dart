@@ -43,7 +43,7 @@ class MainScreen extends StatelessWidget {
   }
 
   Widget _giveMeALogo() {
-    return Image.asset('assets/flutter-icon.jpg');
+    return Image.asset('assets/flutter-icon.png');
   }
 
   Widget _buildBody(BuildContext context) {
