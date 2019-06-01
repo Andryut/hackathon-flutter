@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "909429340011",
+    "firebase_url": "https://fluttering-ecf00.firebaseio.com",
+    "project_id": "fluttering-ecf00",
+    "storage_bucket": "fluttering-ecf00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909429340011:android:7323b2038c52c2fc",
+        "android_client_info": {
+          "package_name": "com.example.fluttering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909429340011-e4ocju3iriam56kr8naisc4d8c00e8oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALPO_iYnYXtBUdZNTa5PGOqrWEFNQb_CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909429340011-e4ocju3iriam56kr8naisc4d8c00e8oe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

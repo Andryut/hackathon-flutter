@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:fluttering/routes/app_routes.dart';
+import 'package:fluttering/screens/login_screen.dart';
 import 'package:fluttering/screens/create_post.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    print(routes);
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Fluttering',
+      routes: routes,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CreatePost(),
+      home: LoginScreen(),
     );
   }
 }
-
