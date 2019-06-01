@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttering/widgets/frames/lastest_posts/lastest_posts.dart';
 import 'package:fluttering/widgets/frames/settings/settings.dart';
+import 'package:fluttering/screens/create_post.dart';
 
 class Home extends StatefulWidget{
 
@@ -15,7 +16,7 @@ class _Home extends State<Home> {
   //App bodies routes
   int _selectedIndex = 1;
   final _widgetOptions = [
-    Text('Index 0'),
+    CreatePost(),
     LastestPosts(),
     Settings(),
   ];

@@ -10,14 +10,6 @@ class CreatePost extends StatefulWidget{
 
 class _CreatePost extends State<CreatePost> {
 
-  //App bodies routes
-  int _selectedIndex = 0;
-  final _widgetOptions = [
-    Text('Index 0'),
-    Text('Index 1'),
-    Text('Index 2'),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,12 +33,6 @@ class _CreatePost extends State<CreatePost> {
       )
 
       );
-  }
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
   }
 
 
