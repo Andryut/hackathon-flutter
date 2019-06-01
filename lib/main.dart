@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:fluttering/app_routes.dart';
 import 'package:fluttering/screens/login_screen.dart';
+=======
+import 'package:fluttering/screens/create_post.dart';
+>>>>>>> create post
 
 void main() => runApp(MyApp());
 
