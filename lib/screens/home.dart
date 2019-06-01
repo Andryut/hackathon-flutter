@@ -28,9 +28,9 @@ class _Home extends State<Home> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.question_answer, color: Colors.blue,), title: Text('Forum')),
+          BottomNavigationBarItem(icon: Icon(Icons.plus_one, color: Colors.blue,), title: Text('Create New Post')),
           BottomNavigationBarItem(icon: Icon(Icons.access_time, color: Colors.blue,), title: Text('Last activity')),
-          BottomNavigationBarItem(icon: Icon(Icons.dvr, color: Colors.blue,), title: Text('Tutorials')),
+          BottomNavigationBarItem(icon: Icon(Icons.account_circle, color: Colors.blue,), title: Text('Account')),
         ],
         currentIndex: _selectedIndex,
         fixedColor: Colors.indigo,
