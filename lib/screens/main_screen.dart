@@ -43,18 +43,7 @@ class MainScreen extends StatelessWidget {
   }
 
   Widget _giveMeALogo() {
-    return Container(
-      child: Material(
-        child: Image.asset(
-          "assets/flutter-icon.jpg",
-          fit: BoxFit.cover,
-        ),
-        shape: CircleBorder(),
-        clipBehavior: Clip.antiAlias,
-      ),
-      constraints: BoxConstraints(
-          minHeight: 35.0, minWidth: 35.0, maxHeight: 40.0, maxWidth: 40.0),
-    );
+    return Image.asset('assets/flutter-icon.jpg');
   }
 
   Widget _buildBody(BuildContext context) {
