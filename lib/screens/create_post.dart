@@ -27,9 +27,13 @@ class _CreatePost extends State<CreatePost> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
+                Text(
+                  'Create new post',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)
+                ),
                 TextFormField(
                     decoration: InputDecoration(
-                        labelText: 'Enter your username'
+                        labelText: 'Enter the title of the post'
                     )
                 )
               ],
